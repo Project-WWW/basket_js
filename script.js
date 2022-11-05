@@ -1,7 +1,7 @@
 const products = [
   {
     id: 1,
-    img: "https://cdn.dodostatic.net/static/Img/Products/c4bb774e6f654f239b79032c60e8fcd4_292x292.jpeg",
+    img: "./images/pizza.jfif",
     nume: "Fiesta",
     continut:
       "Piept de pui, mozzarella, ceapДѓ roИ™ie, ardei gras, rosii proaspete, salam chorizo, sos chipotle, sos ranch, usturoi granulat",
@@ -38,6 +38,7 @@ let basket = document.querySelector(".basket");
 products.forEach((element, id) => {
   let list = `
     <div>
+    <img src="${element.img}" alt="">
     <p>id: ${element.id}</p>
     <p>${element.nume}</p>
     <p>${element.continut}</p>
@@ -86,6 +87,7 @@ console.log(result);
 result.forEach((element) => {
   let list = `
     <div>
+    <img src="${element.img}" alt="">
     <p>id: ${element.id}</p>
     <p>${element.nume}</p>
     <p>${element.continut}</p>
